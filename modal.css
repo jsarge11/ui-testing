@@ -1,0 +1,112 @@
+.modal-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transition: all .5s ease;
+
+}
+.modal {
+    position: fixed;
+    height: 60%;
+    width: 50%;
+    left: 25%;
+    top: 25%;
+    background: white;
+    border: 1px solid black;
+    overflow: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 45px;
+    font-size: 30px;
+}
+.modal-screen-dimmer {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: black;
+    opacity: .5;
+}
+.modal-header {
+    display: flex;
+    justify-content: space-evenly;
+    height: 10%;
+    text-align: center;
+    padding-top: 5%;
+    font-size: 30px;
+    font-weight: bold;
+}
+.modal-body {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.modal-button {
+    height: 50px;
+    width: 75%;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 30px;
+    transition: all .5s ease;
+    border: 1px solid black;
+}
+.modal-button:hover {
+    background-color: white;
+    color: black;
+    transition: all .5s ease;
+}
+.user-input {
+    height: 25%;
+    font-size: 40px;
+    border: none;
+    border-bottom: 1px solid lightgrey;
+    color: #787878;
+    transition: all .5s ease;
+    font-family: 'Thasadith', sans-serif;
+}
+.user-input:focus {
+    border-bottom: 1px solid black;
+    transition: .5s ease-in-out;
+    color: black;
+}
+.user-input::placeholder {
+    color: lightgrey;
+    font-family: 'Thasadith', sans-serif;
+}
+.modal-radio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.radio-item {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    margin: 5px;
+    cursor: pointer;
+}
+label {
+    width: 50%;
+    text-align: left;
+    cursor: pointer;
+
+}
+#radio1, #radio2, #radio3 {
+    cursor: pointer;
+}
+label :checked {
+    background-color: green;
+}
