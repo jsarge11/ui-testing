@@ -5,14 +5,12 @@
     bottom: 0;
     right: 0;
     transition: all .5s ease;
-
 }
 .modal {
     position: fixed;
-    height: 60%;
     width: 50%;
     left: 25%;
-    top: 25%;
+    top: 5%;
     background: white;
     border: 1px solid black;
     overflow: none;
@@ -66,6 +64,10 @@
     color: black;
     transition: all .5s ease;
 }
+.modal-button:active {
+    background-color: black;
+    color: white;
+}
 .user-input {
     height: 25%;
     font-size: 40px;
@@ -85,28 +87,43 @@
     font-family: 'Thasadith', sans-serif;
 }
 .modal-radio {
+    margin: 2% 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .radio-item {
-    width: 50%;
+    width: 60%;
     display: flex;
     justify-content: space-between;
-    border: 1px solid black;
+    border: 1px solid lightgrey;
+    border-radius: 8px;
     margin: 5px;
     cursor: pointer;
 }
 label {
-    width: 50%;
-    text-align: left;
     cursor: pointer;
+}
+label:hover {
+    background: #e2e2e2
+}
+input[type="radio"] {
+    display: none;
+}
+label p {
+    border-radius: 8px;
+    text-align: center;
+}
 
+input[type="radio"]:checked+p {
+    background-color: rgb(212, 212, 212);
+    transition: all .1s ease;
 }
-#radio1, #radio2, #radio3 {
-    cursor: pointer;
-}
-label :checked {
+label:checked {
     background-color: green;
+}
+a {
+    text-decoration: none;
+    color: none;
 }
