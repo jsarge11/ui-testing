@@ -38,7 +38,7 @@
     font-weight: bold;
 }
 .modal-body {
-    height: 60%;
+    height: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -95,6 +95,21 @@
 }
 .radio-item {
     width: 60%;
+}
+.checkbox-item {
+    width: 20%;
+    height: 50%;
+}
+.input-item {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid lightgrey;
+    border-radius: 8px;
+    margin: 5px;
+    cursor: pointer;
+}
+.select-box {
+    width: 60%;
     display: flex;
     justify-content: space-between;
     border: 1px solid lightgrey;
@@ -111,6 +126,10 @@ label:hover {
 input[type="radio"] {
     display: none;
 }
+input[type="checkbox"] {
+    display: none;
+}
+
 label p {
     border-radius: 8px;
     text-align: center;
@@ -120,8 +139,9 @@ input[type="radio"]:checked+p {
     background-color: rgb(212, 212, 212);
     transition: all .1s ease;
 }
-label:checked {
-    background-color: green;
+input[type="checkbox"]:checked+p {
+    background-color: rgb(212, 212, 212);
+    transition: all .1s ease;
 }
 a {
     text-decoration: none;
