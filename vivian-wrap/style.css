@@ -1,0 +1,24 @@
+html, body {
+ height: 100%;
+ width: 100%;
+}
+.parentParent {
+ height: 100%;
+ width: 100%;
+ text-align: center;
+}
+.parentClass {
+ display: flex;
+ flex-wrap: wrap;
+ height: 80%;
+ width: 80%;
+}
+.products {
+ background: green;
+ width: 20%;
+ height: 20%;
+ margin: 4%;
+}
+div {
+ margin: 0;
+}
