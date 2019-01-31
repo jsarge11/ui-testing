@@ -1,0 +1,37 @@
+button:focus {
+ outline: none
+}
+.item-wrapper {
+ display: flex;
+ justify-content: space-between;
+ height: 30px;
+ padding: 20px;
+ box-shadow: rgba(0,0,0,.25) 1px 1px 1px 1px;
+ border-radius: 8px;
+ margin: 10px;
+ font-family: 'Quicksand', sans-serif;
+}
+.item-name-wrapper {
+ display: flex;
+ justify-content: space-between;
+ width: 100%;
+}
+.item-button {
+ margin: 0px 10px;
+ border: none;
+ background: rgb(16, 206, 16);
+ color: white;
+ border-radius:10px;
+ cursor: pointer;
+
+ min-width: 40px;
+}
+.item-button:hover {
+ box-shadow: rgba(0,0,0,.25) 0px 0px 10px 1px;
+}
+.item-button:active {
+ box-shadow: none;
+}
+p > a {
+ text-decoration: none;
+}
